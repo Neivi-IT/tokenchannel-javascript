@@ -1,0 +1,52 @@
+{
+  "name": "tokenchannel",
+  "version": "0.10.0",
+  "author": "oalles@neivi.es",
+  "description": "README.md",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "clean": "rm -rf dist/",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "keywords": [
+    "tokenchannel",
+    "2fa",
+    "two factor",
+    "authentication",
+    "validation",
+    "es5",
+    "ownership",
+    "channel",
+    "email",
+    "pushover",
+    "sms",
+    "nodejs",
+    "typescript",
+    "api"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^1.18.2",
+    "tslint": "^5.20.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.7.2"
+  },
+  "homepage": "https://tokenchannel.io",
+  "files": [
+    "dist/**/*"
+  ],
+  "private": false,
+  "dependencies": {
+    "@types/node": "^12.12.6",
+    "@types/node-fetch": "^2.5.3",
+    "node-fetch": "^2.6.0"
+  }
+}
