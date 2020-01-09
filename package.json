@@ -1,6 +1,6 @@
 {
   "name": "tokenchannel",
-  "version": "0.10.0",
+  "version": "0.10.2",
   "author": "oalles@neivi.es",
   "description": "README.md",
   "main": "./dist/index.js",
@@ -18,8 +18,11 @@
   },
   "keywords": [
     "tokenchannel",
+    "otp",
     "2fa",
     "two factor",
+    "verification",
+    "passwordless",
     "authentication",
     "validation",
     "es5",
@@ -32,7 +35,13 @@
     "typescript",
     "api"
   ],
-  "license": "ISC",
+  "license": "Apache-2.0",
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
   "devDependencies": {
     "prettier": "^1.18.2",
     "tslint": "^5.20.1",
