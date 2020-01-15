@@ -30,7 +30,8 @@ export enum Channel {
     EMAIL = 'email',
     SMS = 'sms',
     PUSHOVER = 'pushover',
-    VOICE = 'voice'
+    VOICE = 'voice',
+    TELEGRAM = 'telegram'
 }
 
 export enum Charset {
