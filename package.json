@@ -1,6 +1,6 @@
 {
   "name": "tokenchannel",
-  "version": "0.11.0",
+  "version": "0.11.1",
   "author": "oalles@neivi.es",
   "description": "README.md",
   "main": "./dist/index.js",
