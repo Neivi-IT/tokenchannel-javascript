@@ -60,5 +60,5 @@ try {
 
 #### Execute Example
 ```bash
-node dist/example/example.js challenge PUSHOVER <userId>
+node dist/example/example.js challenge TELEGRAM <userId>
 ```

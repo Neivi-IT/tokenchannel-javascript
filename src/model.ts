@@ -29,7 +29,7 @@ export interface ITestResponse {
 export enum Channel {
     EMAIL = 'email',
     SMS = 'sms',
-    PUSHOVER = 'pushover',
+    WHATSAPP = 'whatsapp',
     VOICE = 'voice',
     TELEGRAM = 'telegram'
 }

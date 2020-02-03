@@ -1,6 +1,6 @@
 {
   "name": "tokenchannel",
-  "version": "0.11.1",
+  "version": "0.12.0",
   "author": "oalles@neivi.es",
   "description": "README.md",
   "main": "./dist/index.js",
@@ -29,7 +29,8 @@
     "ownership",
     "channel",
     "email",
-    "pushover",
+    "whatsapp",
+    "telegram",
     "sms",
     "nodejs",
     "typescript",
