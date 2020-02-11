@@ -62,3 +62,9 @@ export interface IVoicePriceItem {
     type: string;
     price: number;
 }
+
+export interface IWhatsappPriceItem {
+    code: string;
+    country: string;
+    price: number;
+}

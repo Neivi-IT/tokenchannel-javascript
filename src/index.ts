@@ -31,7 +31,7 @@ import {
     IChallengeOptions,
     IChallengeResponse,
     ISMSPriceItem,
-    ITestResponse, IVoicePriceItem
+    ITestResponse, IVoicePriceItem, IWhatsappPriceItem
 } from './model';
 
 export class Tokenchannel {
@@ -162,6 +162,17 @@ export class Tokenchannel {
         const requestUrl = encodeURI(`${this.BASE_URL}/pricing/voice`);
         return fetch(requestUrl, {method: 'GET', headers: this.headers})
             .then(this.handleResponse as (response: Response) => Promise<IVoicePriceItem[]>);
+    }
+
+    /**
+     * Retrieves the Whatsapp pricing list for supported countries
+     *
+     * @throws {QuotaExceededError} whether QPS o QPM have been exceeded
+     */
+    public async getWhatsappPrices(): Promise<IWhatsappPriceItem[]> {
+        const requestUrl = encodeURI(`${this.BASE_URL}/pricing/whatsapp`);
+        return fetch(requestUrl, {method: 'GET', headers: this.headers})
+            .then(this.handleResponse as (response: Response) => Promise<IWhatsappPriceItem[]>);
     }
 
     public async handleResponse<T>(response: Response): Promise<T> {
